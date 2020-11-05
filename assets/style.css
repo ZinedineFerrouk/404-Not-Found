@@ -1,0 +1,100 @@
+/* Importing Font */
+@font-face {
+    font-family: "Inconsolata";
+    src: url(/assets/font/Inconsolata/static/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Spacemono";
+    src: url(/assets/font/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Main */
+main {
+    padding-top: 2rem;
+    margin: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+header p {
+    width: 30%;
+    font-family: "Inconsolata";
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: -0.1rem;
+    margin: 2rem;
+}
+
+/* ScareCrow settings */
+#scarecrow img {
+    width: 80%;
+    margin-left: 1rem;
+}
+
+/* Bad-news */
+#bad-news {
+    font-family: "Spacemono";
+    margin-left: 2rem;
+    width: 50%;
+}
+
+#bad-news h1 {
+    font-size: 60px;
+    width: 70%;
+}
+
+#bad-news p {
+    font-size: 1.5rem;
+    width: 50%;
+    margin-bottom: 2.5rem;
+}
+
+#bad-news button {
+    margin-top: 1rem;
+    background-color: #333333;
+    color: white;
+    font-size: 14px;
+    padding: 1.5rem;
+}
+
+/* Media query from 1200px */
+@media only screen and (max-width: 1200px) {
+    main {
+        display: block;
+    }
+
+    #scarecrow img,
+    #bad-news {
+        width: 100%;
+    }
+
+    #bad-news h1 {
+        font-size: 48px;
+        width: 100%;
+    }
+
+    #bad-news p {
+        font-size: 18px;
+        width: 80%;
+    }
+}
+
+/* Footer */
+footer {
+    padding-top: 3rem;
+    text-align: center;
+
+    font-family: "Spacemono";
+    font-size: 14px;
+
+    margin-bottom: 1rem;
+}
